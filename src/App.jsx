@@ -52,7 +52,7 @@ const App = () => {
   return (
     <>
 
-      <div style={{ display: 'flex', justifyContent: 'center', height: '40vh', background: 'black' }}>
+      <div style={{ display: 'flex', justifyContent: 'center', height: '40vh',  }}>
         <h1
           style={{
             color: 'white',
@@ -66,7 +66,7 @@ const App = () => {
             <span
               key={index}
               ref={(el) => (lettersRef.current[index] = el)}
-              style={{ display: 'inline-block' }}
+              // style={{ display: 'inline-block' }}
             >
               {char}
             </span>
@@ -77,21 +77,23 @@ const App = () => {
 
       <div
         ref={videoContainerRef}
-        style={{ display: 'flex', justifyContent: 'center', background: 'black' }}
+        style={{ display: 'flex', justifyContent: 'center'  }}
       >
         <video
           ref={videoRef}
           src="/input.mp4"
           muted
           playsInline
-          style={{ height: '800px' }}
+          style={{ height: '800px',background:"transparent", mixBlendMode:"screen" }}
         />
       </div>
 
 
-      <div style={{ minHeight: '100vh', background: 'black' }}></div>
+      <div style={{ minHeight: '100vh'}}></div>
     </>
   );
 };
 
 export default App;
+
+
