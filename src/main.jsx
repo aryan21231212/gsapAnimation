@@ -8,6 +8,6 @@ import Practice from './Practice.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <Practice></Practice>
+    <App />
   </StrictMode>,
 )
